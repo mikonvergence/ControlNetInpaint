@@ -1,4 +1,5 @@
 # :recycle: ControlNetInpaint
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mikonvergence/ControlNetInpaint/blob/main/ControlNet-with-Inpaint-Demo-colab.ipynb)
 
 [ControlNet](https://github.com/lllyasviel/ControlNet) has proven to be a great tool for guiding StableDiffusion models with image-based hints! But what about **changing only a part of the image** based on that hint?
 
@@ -80,6 +81,9 @@ For the remaining modalities, the panda example doesn't really make much sense, 
 **Prompt**: *"a pink eerie scary house"*
 
 ![Normal Result](output/seg_grid.png)
+
+### :fast_forward: DiffusionFastForward
+If you want to learn more about the process of denoising diffusion for images, check out the open-source [DiffusionFastForward](https://github.com/mikonvergence/DiffusionFastForward) with colab notebooks where networks are trained from scratch on high-resolution data! :beginner:
 
 ### Acknowledgement
 There is a related excellent repository of [ControlNet-for-Any-Basemodel](https://github.com/haofanwang/ControlNet-for-Diffusers) that, among many other things, also shows similar examples of using ControlNet for inpainting. However, that definition of the pipeline is quite different, but most importantly, does not allow for controlling the `controlnet_conditioning_scale` as an input argument.
