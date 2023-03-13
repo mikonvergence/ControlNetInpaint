@@ -80,3 +80,8 @@ For the remaining modalities, the panda example doesn't really make much sense, 
 **Prompt**: *"a pink eerie scary house"*
 
 ![Normal Result](output/seg_grid.png)
+
+### Acknowledgement
+There is a related excellent repository of [ControlNet-for-Any-Basemodel](https://github.com/haofanwang/ControlNet-for-Diffusers) that, among many other things, also shows similar examples of using ControlNet for inpainting. However, that definition of the pipeline is quite different, but most importantly, does not allow for controlling the `controlnet_conditioning_scale` as an input argument.
+
+There are other differences, such as the fact that in this implementation, only one pipeline needs to be instantiated (as opposed to two in the other one), but **the key motivation for publishing this repository is to provide a space solely focused on the application of ControlNet for inpainting.**
