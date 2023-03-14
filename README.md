@@ -82,8 +82,17 @@ For the remaining modalities, the panda example doesn't really make much sense, 
 
 ![Normal Result](output/seg_grid.png)
 
-### :fast_forward: DiffusionFastForward
-If you want to learn more about the process of denoising diffusion for images, check out the open-source [DiffusionFastForward](https://github.com/mikonvergence/DiffusionFastForward) with colab notebooks where networks are trained from scratch on high-resolution data! :beginner:
+## Challenging Example 🐕➡️🍔
+Let's see how tuning the `controlnet_conditioning_scale` works out for a more challenging example of turning the dog into a cheeseburger!
+
+In this case, we **demand a large semantic leap** and that requires a more subtle guide from the control image!
+
+![Cheeseburger Result](output/canny_cheeseburger_grid.png)
+
+### :fast_forward: DiffusionFastForward: learn diffusion from ground up! 🎻
+If you want to learn more about the process of denoising diffusion for images, check out the **open-source course** [DiffusionFastForward](https://github.com/mikonvergence/DiffusionFastForward) with colab notebooks where networks are trained from scratch on high-resolution data! :beginner:
+
+![Logo](https://user-images.githubusercontent.com/13435425/222425743-213279f9-d0a1-413c-a16a-2c88b512f827.png)
 
 ### Acknowledgement
 There is a related excellent repository of [ControlNet-for-Any-Basemodel](https://github.com/haofanwang/ControlNet-for-Diffusers) that, among many other things, also shows similar examples of using ControlNet for inpainting. However, that definition of the pipeline is quite different, but most importantly, does not allow for controlling the `controlnet_conditioning_scale` as an input argument.
