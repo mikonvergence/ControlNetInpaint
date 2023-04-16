@@ -7,7 +7,13 @@
 
 In this repository, you will find a basic example notebook that shows how this can work. **The key trick is to use the right value of the parameter** `controlnet_conditioning_scale` - while value of `1.0` often works well, it is sometimes beneficial to bring it down a bit when the controlling image does not fit the selected text prompt very well.
 
+## 🤗 Demo App on HuggingFace
+Check out [the open-source web demo](https://huggingface.co/spaces/mikonvergence/mask-and-sketch) on HuggingFace built on top of this tool:
+[<img width="1518" alt="Screenshot 2023-04-16 at 11 56 29" src="https://user-images.githubusercontent.com/13435425/232302552-123744ba-4953-4972-9df8-ab19ee7b599b.png">](https://huggingface.co/spaces/mikonvergence/mask-and-sketch)
+
 ## Usage
+> This code is currently compatible with `diffusers==0.14.0`. An upgrade to the latest version can be expected in the near future (currently, some breaking changes are present in `0.15.0` that should ideally be fixed on the side of the diffusers interface).
+
 Here's an example of how this new pipeline (`StableDiffusionControlNetInpaintPipeline`) is used with the core backbone of `"runwayml/stable-diffusion-inpainting"`:
 ```python
 # load control net and stable diffusion v1-5
@@ -92,7 +98,7 @@ In this case, we **demand a large semantic leap** and that requires a more subtl
 ### :fast_forward: DiffusionFastForward: learn diffusion from ground up! 🎻
 If you want to learn more about the process of denoising diffusion for images, check out the **open-source course** [DiffusionFastForward](https://github.com/mikonvergence/DiffusionFastForward) with colab notebooks where networks are trained from scratch on high-resolution data! :beginner:
 
-![Logo](https://user-images.githubusercontent.com/13435425/222425743-213279f9-d0a1-413c-a16a-2c88b512f827.png)
+[![Logo](https://user-images.githubusercontent.com/13435425/222425743-213279f9-d0a1-413c-a16a-2c88b512f827.png)](https://github.com/mikonvergence/DiffusionFastForward)
 
 ### Acknowledgement
 There is a related excellent repository of [ControlNet-for-Any-Basemodel](https://github.com/haofanwang/ControlNet-for-Diffusers) that, among many other things, also shows similar examples of using ControlNet for inpainting. However, that definition of the pipeline is quite different, but most importantly, does not allow for controlling the `controlnet_conditioning_scale` as an input argument.
