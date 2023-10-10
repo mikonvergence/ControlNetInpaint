@@ -7,11 +7,16 @@
 
 In this repository, you will find a basic example notebook that shows how this can work. **The key trick is to use the right value of the parameter** `controlnet_conditioning_scale` - while value of `1.0` often works well, it is sometimes beneficial to bring it down a bit when the controlling image does not fit the selected text prompt very well.
 
-## 🤗 Demo App on HuggingFace
-Check out [the open-source web demo](https://huggingface.co/spaces/mikonvergence/mask-and-sketch) on HuggingFace built on top of this tool:
+## Demos on 🤗  HuggingFace Using ControlNetInpaint
+### :pencil2: Mask and Sketch
+Check out the [HuggingFace Space](https://huggingface.co/spaces/mikonvergence/mask-and-sketch) which allows you to scribble and describe how you want to recreate a part of an image:
 [<img width="1518" alt="Screenshot 2023-04-16 at 11 56 29" src="https://user-images.githubusercontent.com/13435425/232302552-123744ba-4953-4972-9df8-ab19ee7b599b.png">](https://huggingface.co/spaces/mikonvergence/mask-and-sketch)
 
-## Usage
+### :performing_arts:theaTRON
+Check out the [HuggingFace Space](https://huggingface.co/spaces/mikonvergence/theaTRON) that reimagines scenes with human subjects using a text prompt:
+[<img width="1518" alt="theaTRON tool examples" src="https://mikonvergence-theatron.hf.space/file/data/image-only.png">](https://huggingface.co/spaces/mikonvergence/theaTRON)
+
+## Code Usage
 > This code is currently compatible with `diffusers==0.14.0`. An upgrade to the latest version can be expected in the near future (currently, some breaking changes are present in `0.15.0` that should ideally be fixed on the side of the diffusers interface).
 
 Here's an example of how this new pipeline (`StableDiffusionControlNetInpaintPipeline`) is used with the core backbone of `"runwayml/stable-diffusion-inpainting"`:
