@@ -14,7 +14,7 @@ Check out the [HuggingFace Space](https://huggingface.co/spaces/mikonvergence/ma
 
 ### :performing_arts:theaTRON
 Check out the [HuggingFace Space](https://huggingface.co/spaces/mikonvergence/theaTRON) that reimagines scenes with human subjects using a text prompt:
-[<img width="1518" alt="theaTRON tool examples" src="https://mikonvergence-theatron.hf.space/file/data/image-only.png">](https://huggingface.co/spaces/mikonvergence/theaTRON)
+[<img width="1518" alt="theaTRON tool examples" src="https://huggingface.co/spaces/mikonvergence/theaTRON/resolve/main/data/image-only.png">](https://huggingface.co/spaces/mikonvergence/theaTRON)
 
 ## Code Usage
 > This code is currently compatible with `diffusers==0.14.0`. An upgrade to the latest version can be expected in the near future (currently, some breaking changes are present in `0.15.0` that should ideally be fixed on the side of the diffusers interface).
